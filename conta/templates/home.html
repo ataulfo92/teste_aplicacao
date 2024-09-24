@@ -7,5 +7,22 @@
 </head>
 <body>
     <h1>Outro teste django</h1>
+
+<form>
+<input type="text" name="nome" id="input-nome">Nome:<br>
+<input type="email" name="email" id="input-email">Email:<br>
+<input type="submit" name="botao" id="botao-enviar" onclick="botao_verificar()">Enviar
+
+
+</form>
+
+
+
+
+
+    {% load static %}
+    <script src="{% static 'js/config.js' %}"></script>
+    <link href="{% static 'css/estilos.css' %}" type="text/css" rel="stylesheet"></link>
+
 </body>
 </html>
